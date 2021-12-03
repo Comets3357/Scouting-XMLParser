@@ -13,8 +13,6 @@ public class main {
         //String fileCont now contains all the values in strings.xml
         //below you can test parsing through this string to get the values you need
 
-
-
         write_files(url, fileCont);
         System.out.println(fileCont);
     }
@@ -28,8 +26,7 @@ public class main {
             BufferedReader br = new BufferedReader(new InputStreamReader(fileName.openStream()));
             while ((data = br.readLine()) != null)
                 output = output + data + "\n";
-        }
-        catch(Exception e){
+        } catch (Exception e){
             e.printStackTrace();
         }
         return output;
@@ -40,9 +37,8 @@ public class main {
             FileWriter filewriter = new FileWriter("testing123.xml");
             filewriter.write(data);
             filewriter.close();
-        }catch (Exception e){
+        } catch (Exception e){
             e.printStackTrace();
         }
-
     }
 }
