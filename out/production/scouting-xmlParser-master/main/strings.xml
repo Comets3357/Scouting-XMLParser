@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">ScoutingApp</string>
+    <string name="textbox_default">0</string>
+    <!--These first two strings are universal for all apps -->
+    <string name="matchNumber">matchNumber</string>
+    <string name="scouterName">scouterName</string>
+    <string name="outerPortAuto">Outer Port Auto</string>
+    <string name="innerPortAuto">Inner Port Auto</string>
+    <string name="bottomPortAuto">Bottom Port Auto</string>
+    <string name="outerPort">Outer Port</string>
+    <string name="innerPort">Inner Port</string>
+    <string name="bottomPort">Bottom Port</string>
+    <string name="foul">Fouls</string>
+    <string name="techFoul">Tech Fouls</string>
+    <string name="yellowCard">Yellow Cards</string>
+    <string name="teamNumber">teamNumber</string>
+    <string name="comms">comms</string>
+    <string name="defense">defense</string>
+    <string name="redCard">redCard</string>
+    <string name="climb">climb</string>
+    <string name="crossedAuto">crossedAuto</string>
+    <string name="comments">comments</string>
+    <string name="rotated">rotated</string>
+    <string name="foundColor">foundColor</string>
+    <string name="balanced">balanced</string>
+
+
+    <!--
+    <string name="RadioGroup1">value6</string>
+    <string name="Radio1">level1</string>
+    <string name="Radio2">level2</string>
+    <string name="Radio3">level3</string>-->
+    <!--Value1 must be match number, Value 2 must be Scouter name, name of teamNumbers cannot be altered-->
+    <!--Radios need 1 item in the array below for the radio group, and it needs 3 values above for each radio button-->
+    <!--Radios are special, each radio group needs 1 entry, and the item in the array below must equal the id of the radio group-->
+    <string-array name="datapoints">
+        <item>@string/matchNumber</item>
+        <item>@string/teamNumber</item>
+        <item>@string/scouterName</item>
+        <item>@string/outerPortAuto</item>
+        <item>@string/innerPortAuto</item>
+        <item>@string/bottomPortAuto</item>
+        <item>@string/outerPort</item>
+        <item>@string/innerPort</item>
+        <item>@string/bottomPort</item>
+        <item>@string/foul</item>
+        <item>@string/techFoul</item>
+        <item>@string/yellowCard</item>
+        <item>@string/comms</item>
+        <item>@string/defense</item>
+        <item>@string/redCard</item>
+        <item>@string/climb</item>
+        <item>@string/crossedAuto</item>
+        <item>@string/comments</item>
+        <item>@string/rotated</item>
+        <item>@string/foundColor</item>
+        <item>@string/balanced</item>
+
+        <!--<item>@string/RadioGroup1</item>-->
+    </string-array>
+    <string-array name="reqData">
+        <item>@string/scouterName</item>
+        <item>@string/matchNumber</item>
+        <item>@string/teamNumber</item>
+        <item>@string/climb</item>
+    </string-array>
+
+
+</resources>

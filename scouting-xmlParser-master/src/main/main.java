@@ -6,6 +6,9 @@ import java.net.URL;
 public class main {
 
     public static void main(String[] args){
+        //JACOB'S TESTING FILE (NOT ACTUAL PROGRAM - actual xml parser is "test.java")
+
+
         //finding local path of file
         URL url = main.class.getResource("strings.xml");
         //reading file

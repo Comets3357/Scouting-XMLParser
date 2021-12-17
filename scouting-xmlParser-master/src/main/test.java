@@ -1,7 +1,10 @@
 package main;
 
+import java.io.BufferedReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.URL;
 import java.util.Scanner;
 
 public class test {
@@ -9,6 +12,14 @@ public class test {
     private static Scanner keyboard = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
+        /* This file reads from the file named "Read", where the input text goes.
+        It will then put that file, line by line, into the format of "strings.xml" and "SQLiteInfo.xml"
+        so those files aren't needed anymore, and we can just input things automatically.
+
+        If there is a line that the program doesn't like, it will ask you to reenter it, and then move on
+        to the next line afterwards. */
+
+
         //initializing the strings
         String format1 = "";
         String format2 = "";
@@ -16,11 +27,26 @@ public class test {
         String test = "";
         boolean breakPls = false;
 
-        //loop to get all 20 inputs
+        //reading the file
+        URL url = main.class.getResource("Read"); //file path
+        String str = read_files(url); //doing the actual reading
+
+        //variables for getting the read file in the correct line-by-line format
+        int enterLoc = 0;
+        int previousEnterLoc = -1;
+        boolean firstLoop = true;
+
+        //loop to get all the inputs
         while (!test.equals("stop")) {
-            //getting user input
-            System.out.println("Enter the data:");
-            test = keyboard.nextLine();
+            //getting input
+            if (!firstLoop) {
+                previousEnterLoc = enterLoc;
+            }
+            enterLoc = str.indexOf("\n", enterLoc + 1);
+            if (enterLoc==-1){
+                break;
+            }
+            test = str.substring(previousEnterLoc + 1, enterLoc);
             test = test.trim();
             String test1 = test;
             if (test1.toUpperCase().equals("STOP")){
@@ -33,8 +59,11 @@ public class test {
                 test1 = test1.substring(0, commaLoc) + test1.substring(commaLoc + 1);
                 numOfCommas++;
             }
+
+            //in case the program doesn't like a certain line, it will ask you to reenter it here
             while (numOfCommas != 2) {
-                System.out.println("Invalid data. Must have at least 2 commas:");
+                System.out.println(test);
+                System.out.println("Invalid data. Input stop to end data input. Input the data to continue.");
                 test = keyboard.nextLine();
                 test = test.trim();
                 test1 = test;
@@ -54,7 +83,7 @@ public class test {
                 break;
             }
 
-            //deleting whitespace (except for last space)
+            //deleting whitespace (except for last space if not camelCase)
             while (test.contains(", ")) {
                 int spaceLoc = test.indexOf(" ");
                 if (test.charAt(spaceLoc - 1) == ',') {
@@ -79,16 +108,9 @@ public class test {
                 format2 = format2 + "\n        <string name=\"" + test.substring(0, firstCommaLoc) + "\">" + (test.substring(secondCommaLoc + 1, secondCommaLoc + 2)) + test.substring(secondCommaLoc + 2) + "</string>";
             }
             format3 = format3 + "\n        <item>@string/" + test.substring(0, firstCommaLoc) + "</item>";
-        }
 
-        System.out.println("Scouter Name:");
-        String scouterName = keyboard.nextLine();
-        System.out.println("Match Number:");
-        String matchNumber = keyboard.nextLine();
-        System.out.println("Team Number:");
-        String teamNumber = keyboard.nextLine();
-        System.out.println("Climb:");
-        String climb = keyboard.nextLine();
+            firstLoop = false;
+        }
 
         format2 = "<resources>\n" +
                 "    <string name=\"app_name\">ScoutingApp</string>\n" +
@@ -127,16 +149,26 @@ public class test {
                 "    <string-array name=\"scoutingDataKeys\">\n" + format1 + "\n    </string-array>\n" +
                 "</resources>";
 
-        System.out.println(format1);
-        System.out.println(format2);
-
-        //printing those strings to the files
-        FileWriter format1Write = new FileWriter("SQLiteInfo1.xml");
+        //printing those strings to the files (new files outside the "main" folder)
+        FileWriter format1Write = new FileWriter("SQLiteInfo.xml");
         format1Write.write(format1);
         format1Write.close();
-        FileWriter format2Write = new FileWriter("strings1.xml");
+        FileWriter format2Write = new FileWriter("strings.xml");
         format2Write.write(format2);
         format2Write.close();
     }
-}
 
+    //This method is weird, but it works (Jacob's words)
+    public static String read_files(URL fileName){
+        String data = "";
+        String output = "";
+        try {
+            BufferedReader br = new BufferedReader(new InputStreamReader(fileName.openStream()));
+            while ((data = br.readLine()) != null)
+                output = output + data + "\n";
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+        return output;
+    }
+}

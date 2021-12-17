@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/scouting-xmlParser-master.iml" filepath="$PROJECT_DIR$/scouting-xmlParser-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xmlGen.iml" filepath="$PROJECT_DIR$/xmlGen.iml" />
     </modules>
   </component>
 </project>
