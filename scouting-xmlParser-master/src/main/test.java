@@ -103,9 +103,9 @@ public class test {
             //putting the information in string format
             format1 = format1 + "\n        <item>" + test.substring(0, firstCommaLoc) + " " + (test.substring(firstCommaLoc + 1, secondCommaLoc)).toUpperCase() + "</item>";
             if (spaceLoc!=secondCommaLoc) {
-                format2 = format2 + "\n        <string name=\"" + test.substring(0, firstCommaLoc) + "\">" + (test.substring(secondCommaLoc + 1, secondCommaLoc + 2)).toUpperCase() + test.substring(secondCommaLoc + 2, spaceLoc) + test.substring(spaceLoc, spaceLoc + 2).toUpperCase() + test.substring(spaceLoc + 2) + "</string>";
+                format2 = format2 + "\n    <string name=\"" + test.substring(0, firstCommaLoc) + "\">" + (test.substring(secondCommaLoc + 1, secondCommaLoc + 2)).toUpperCase() + test.substring(secondCommaLoc + 2, spaceLoc) + test.substring(spaceLoc, spaceLoc + 2).toUpperCase() + test.substring(spaceLoc + 2) + "</string>";
             } else {
-                format2 = format2 + "\n        <string name=\"" + test.substring(0, firstCommaLoc) + "\">" + (test.substring(secondCommaLoc + 1, secondCommaLoc + 2)) + test.substring(secondCommaLoc + 2) + "</string>";
+                format2 = format2 + "\n    <string name=\"" + test.substring(0, firstCommaLoc) + "\">" + (test.substring(secondCommaLoc + 1, secondCommaLoc + 2)) + test.substring(secondCommaLoc + 2) + "</string>";
             }
             format3 = format3 + "\n        <item>@string/" + test.substring(0, firstCommaLoc) + "</item>";
 
@@ -115,8 +115,12 @@ public class test {
         format2 = "<resources>\n" +
                 "    <string name=\"app_name\">ScoutingApp</string>\n" +
                 "    <string name=\"textbox_default\">0</string>\n" +
-                "    <!--These first two strings are universal for all apps -->\n" + format2 + "\n" +
-                "\n" +
+                "    <!--These first two strings are universal for all apps -->\n" +
+                "    <string name=\"matchNumber\">matchNumber</string>\n" +
+                "    <string name=\"scouterName\">scouterName</string>\n" +
+                "    <string name=\"teamNumber\">teamNumber</string>\n" +
+                "    <string name=\"climb\">climb</string>" + format2 +
+                "\n\n\n" +
                 "    <!--\n" +
                 "    <string name=\"RadioGroup1\">value6</string>\n" +
                 "    <string name=\"Radio1\">level1</string>\n" +
@@ -125,7 +129,11 @@ public class test {
                 "    <!--Value1 must be match number, Value 2 must be Scouter name, name of teamNumbers cannot be altered-->\n" +
                 "    <!--Radios need 1 item in the array below for the radio group, and it needs 3 values above for each radio button-->\n" +
                 "    <!--Radios are special, each radio group needs 1 entry, and the item in the array below must equal the id of the radio group-->\n" +
-                "    <string-array name=\"datapoints\">" + format3 + "\n" +
+                "    <string-array name=\"datapoints\">\n" +
+                "        <item>@string/scouterName</item>\n" +
+                "        <item>@string/matchNumber</item>\n" +
+                "        <item>@string/teamNumber</item>\n" +
+                "        <item>@string/climb</item>" + format3 + "\n\n" +
                 "        <!--<item>@string/RadioGroup1</item>-->\n" +
                 "    </string-array>\n" +
                 "    <string-array name=\"reqData\">\n" +
@@ -146,7 +154,11 @@ public class test {
                 "        Use normal SQL pieces to create columns -->\n" +
                 "\n" +
                 "    <!-- ScoutingData Database -->\n" +
-                "    <string-array name=\"scoutingDataKeys\">\n" + format1 + "\n    </string-array>\n" +
+                "    <string-array name=\"scoutingDataKeys\">\n" +
+                "        <item>matchNumber INTEGER</item>\n" +
+                "        <item>scouterName TEXT</item>\n" +
+                "        <item>teamNumber INTEGER</item>\n" +
+                "        <item>climb TEXT</item>" + format1 + "\n    </string-array>\n" +
                 "</resources>";
 
         //printing those strings to the files (new files outside the "main" folder)
@@ -172,3 +184,5 @@ public class test {
         return output;
     }
 }
+
+//everything about this file is janky but it all works
