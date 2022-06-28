@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">ScoutingApp</string>
+    <string name="textbox_default">0</string>
+    <!--These first two strings are universal for all apps -->
+    <!--Make sure that the values below are the right values!!-->
+    <!--You can make these pretty ONLY BY changing case and adding spaces-->
+
+        <string name="upperAuto">Auto Upper</string>
+        <string name="lowerAuto">Auto Lower</string>
+        <string name="upperTele">Tele Upper</string>
+        <string name="lowerTele">Tele Lower</string>
+        <string name="teleCargoMissed">Tele Cargo Missed</string>
+        <string name="autoCargoMissed">Auto Cargo Missed</string>
+        <string name="fouls">Fouls</string>
+        <string name="techFouls">Tech Fouls</string>
+        <string name="yellowCards">Yellow Cards</string>
+        <string name="redCard">redCard</string>
+        <string name="defense">teleDefense</string>
+        <string name="lostComms">lostComms</string>
+        <string name="scouterName">scouterName</string>
+        <string name="matchNumber">matchNumber</string>
+        <string name="teamNumber">teamNumber</string>
+        <string name="climb">climb</string>
+        <string name="exitTarmac">AutoExitTarmac</string>
+        <string name="comments">comments</string>
+
+    <!--
+    <string name="RadioGroup1">value6</string>
+    <string name="Radio1">level1</string>
+    <string name="Radio2">level2</string>
+    <string name="Radio3">level3</string>-->
+    <!--Value1 must be match number, Value 2 must be Scouter name, name of teamNumbers cannot be altered-->
+    <!--Radios need 1 item in the array below for the radio group, and it needs 3 values above for each radio button-->
+    <!--Radios are special, each radio group needs 1 entry, and the item in the array below must equal the id of the radio group-->
+    <string-array name="datapoints">
+        <item>@string/matchNumber</item>
+        <item>@string/teamNumber</item>
+        <item>@string/scouterName</item>
+        <item>@string/upperAuto</item>
+        <item>@string/lowerAuto</item>
+        <item>@string/upperTele</item>
+        <item>@string/lowerTele</item>
+        <item>@string/teleCargoMissed</item>
+        <item>@string/autoCargoMissed</item>
+        <item>@string/fouls</item>
+        <item>@string/techFouls</item>
+        <item>@string/yellowCards</item>
+        <item>@string/redCard</item>
+        <item>@string/defense</item>
+        <item>@string/lostComms</item>
+        <item>@string/climb</item>
+        <item>@string/exitTarmac</item>
+        <item>@string/comments</item>
+        <!--<item>@string/RadioGroup1</item>-->
+    </string-array>
+    <string-array name="reqData">
+        <item>@string/scouterName</item>
+        <item>@string/matchNumber</item>
+        <item>@string/teamNumber</item>
+        <item>@string/climb</item>
+    </string-array>
+    <string-array name="teamNames">
+        <item>Lucas Allen</item>
+        <item>Jacob Beels</item>
+        <item>Hrishikaa Bhargava</item>
+        <item>Abbie Compton</item>
+        <item>Jessica Davids</item>
+        <item>Allison Edwards</item>
+        <item>Aiden Engvall</item>
+        <item>Nicolas Fernandez</item>
+        <item>Ben Gates</item>
+        <item>Emilio Hernandez</item>
+        <item>Jude Hoogterp</item>
+        <item>Naman Jain</item>
+        <item>Sam Joseph</item>
+        <item>Alex McConnell</item>
+        <item>Rishi Menon</item>
+        <item>Evan Meyer</item>
+        <item>Addison Moore</item>
+        <item>Zachary Moore</item>
+        <item>Tananya Prankprakma</item>
+        <item>Lani Quach</item>
+        <item>Sahil Sawant</item>
+        <item>Hendrik Sorensen</item>
+        <item>Andrew Swanstrom</item>
+        <item>Brian Travis</item>
+        <item>Simon Zwart</item>
+        <item>Kayla Compton</item>
+        <item>Niel Boonto</item>
+        <item>Ishan Sinha</item>
+        <item>Josh Dunston</item>
+        <item>Patrick MacLeod</item>
+        <item>Preston Purdue</item>
+        <item>Camden Pastyrnak</item>
+        <item>Chris Mosentine</item>
+        <item>Tim Peterson</item>
+        <item>Stu Atwater</item>
+        <item>Destiny Wu</item>
+        <!--<item>@string/RadioGroup1</item>-->
+    </string-array>
+
+
+</resources>

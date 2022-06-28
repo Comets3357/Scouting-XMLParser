@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- format: <item>SQL Stuff<item/>
+    COPY AND PASTE FROM STRINGS!!!
+        Use normal SQL pieces to create columns -->
+
+    <!-- ScoutingData Database -->
+    <string-array name="scoutingDataKeys">
+        <item>matchNumber INTEGER</item>
+        <item>scouterName TEXT</item>
+        <item>teamNumber INTEGER</item>
+        <item>climb TEXT</item>
+    </string-array>
+</resources>

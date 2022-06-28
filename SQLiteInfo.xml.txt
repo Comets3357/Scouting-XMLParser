@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- format: <item>SQL Stuff<item/>
+    COPY AND PASTE FROM STRINGS!!!
+        Use normal SQL pieces to create columns -->
+
+    <!-- ScoutingData Database -->
+    <string-array name="scoutingDataKeys">
+        <item>matchNumber INTEGER</item>
+        <item>teamNumber TEXT</item>
+        <item>scouterName TEXT</item>
+        <item>autoUpper INTEGER</item>
+        <item>autoLower INTEGER</item>
+        <item>teleUpper INTEGER</item>
+        <item>teleLower INTEGER</item>
+        <item>autoCargoMissed INTEGER</item>
+        <item>teleCargoMissed INTEGER</item>
+        <item>fouls INTEGER</item>
+        <item>techFouls INTEGER</item>
+        <item>yellowCards INTEGER</item>
+        <item>redCard INTEGER</item>
+        <item>teleDefense TEXT</item>
+        <item>lostComms INTEGER</item>
+        <item>climb TEXT</item>
+        <item>AutoExitTarmac INTEGER</item>
+        <item>comments TEXT</item>
+    </string-array>
+</resources>

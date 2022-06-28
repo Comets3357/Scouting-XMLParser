@@ -5,6 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class test {
@@ -137,14 +138,10 @@ public class test {
                 "        <!--<item>@string/RadioGroup1</item>-->\n" +
                 "    </string-array>\n" +
                 "    <string-array name=\"reqData\">\n" +
-                "        <item>@string/scouterName</item>\n" +
                 "        <item>@string/matchNumber</item>\n" +
                 "        <item>@string/teamNumber</item>\n" +
                 "        <item>@string/climb</item>\n" +
-                "    </string-array>\n" +
-                "\n" +
-                "\n" +
-                "</resources>";
+                "   </string-array>"  ;
 
         format1 = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
                 "<resources>\n" +
@@ -167,6 +164,30 @@ public class test {
         format1Write.close();
         FileWriter format2Write = new FileWriter("strings.xml");
         format2Write.write(format2);
+        format2Write.append("   <string-array name=\"teamNames\"> \n");
+        String name = "";
+        System.out.println("enter a list of scouter.");
+        while (!name.equalsIgnoreCase("stop")){
+            name = keyboard.nextLine();
+            if (name.contains(",")){
+                ArrayList<String> names = new ArrayList<>();
+                while (name.contains(",")){
+                    names.add(name.substring(0, name.indexOf(",")));
+                    name = name.substring(name.indexOf(",") + 2);
+
+                }
+                names.add(name);
+                for (int i = 0; i < names.size(); i++){
+                    name = names.get(i);
+                    format2Write.append("        <item>" + name + "</item>\n");
+                }
+            }
+            else {
+                if (name.equalsIgnoreCase("stop"))
+                    break;
+                format2Write.append("        <item>" + name + "</item>\n");
+            }
+        }
         format2Write.close();
     }
 
