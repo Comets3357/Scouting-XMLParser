@@ -185,7 +185,9 @@ public class test {
             else {
                 if (name.equalsIgnoreCase("stop"))
                     break;
-                format2Write.append("        <item>" + name + "</item>\n");
+                format2Write.append("        <item>" + name + "</item>\n" +
+                "   </string-array>"+
+                        "</resources>");
             }
         }
         format2Write.close();
