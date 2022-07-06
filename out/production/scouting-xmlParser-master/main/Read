@@ -1,1 +1,6 @@
-format: datapoint,TYPE,name (delete this line before running the program (test.java), also don't have extra tabs or enters)
+upperHub,INT,UpperHub
+lowerHub,INT,LowerHub
+stop
+Defense,STRING,Defense
+stop
+left,BOOLEAN,autoLeft
