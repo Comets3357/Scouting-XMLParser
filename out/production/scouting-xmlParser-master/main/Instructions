@@ -1,0 +1,20 @@
+This is a guide to the XML parser program and an explanation as to how everything works.
+The XML parser takes data line by line from the "Read" file and turns the given inputs into XML code.
+The parser works in three phases, Dual, Tele, and Auto. The program shifts to them in this order.
+You must give your input in this order. Name of reference in code, the type of variable, what will show up in the app
+(ex. ver, INTEGER, version. create an integer named ver, but show up as version in the app)
+each sort of line must have only two commas and must be used to separate from the name in reference, data type, and
+what will show up in the app.
+
+The dual mode will give two outputs. it will take the both the name for the reference in code and what will show
+up in the app and add tele to the front for one output and put auto for the other output
+
+both tele and auto phase are like dual, but they are seperate. these phases should be used when you want to make
+a data point for either teleop or auton parts of the match for the app.
+
+inorder to change phases, make a line that simply says "stop". This will tell the program that you do not want it
+read in the mode you are currently in and cause a change in phases so if you are in dual, inputing "stop" will put
+the program in the tele phase.
+
+*To be developed*
+A fourth phase that will intake the names of students as a list or individual strings

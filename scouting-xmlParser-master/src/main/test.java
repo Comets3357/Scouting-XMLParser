@@ -38,7 +38,6 @@ public class test {
         //reading the file
         URL url = main.class.getResource("Read"); //file path
         String str = read_files(url); //doing the actual reading
-
         //variables for getting the read file in the correct line-by-line format
         int enterLoc = 0;
         int previousEnterLoc = -1;
@@ -210,11 +209,21 @@ public class test {
         format1Write.close();
         FileWriter format2Write = new FileWriter("strings.xml");
         format2Write.write(format2);
-        format2Write.append("   <string-array name=\"teamNames\"> \n");
+        format2Write.append("\n   <string-array name=\"teamNames\"> \n");
         String name = "";
-        System.out.println("enter a list of scouter.");
         while (!name.equalsIgnoreCase("stop")){
-            name = keyboard.nextLine();
+            if (!firstLoop) {
+                previousEnterLoc = enterLoc;
+            }
+            //grabs the length of a line of input
+            enterLoc = str.indexOf("\n", enterLoc + 1);
+            if (enterLoc == -1) {
+                break;
+            }
+            //takes a line of input
+            input = str.substring(previousEnterLoc + 1, enterLoc);
+            input = input.trim();
+            name = input;
             if (name.contains(",")){
                 ArrayList<String> names = new ArrayList<>();
                 while (name.contains(",")){
