@@ -6,6 +6,12 @@
     <string name="scouterName">scouterName</string>
     <string name="teamNumber">teamNumber</string>
     <string name="climb">climb</string>
+    <string name="teleupperHub">UpperHub</string>
+    <string name="autoupperHub">UpperHub</string>
+    <string name="telelowerHub">LowerHub</string>
+    <string name="autolowerHub">LowerHub</string>
+    <string name="teleDefense">Defense</string>
+    <string name="autoleft">autoLeft</string>
 
 
     <!--
@@ -21,6 +27,10 @@
         <item>@string/matchNumber</item>
         <item>@string/teamNumber</item>
         <item>@string/climb</item>
+        <item>@string/upperHub</item>
+        <item>@string/lowerHub</item>
+        <item>@string/Defense</item>
+        <item>@string/left</item>
 
         <!--<item>@string/RadioGroup1</item>-->
     </string-array>
@@ -28,10 +38,12 @@
         <item>@string/matchNumber</item>
         <item>@string/teamNumber</item>
         <item>@string/climb</item>
-   </string-array>   <string-array name="teamNames"> 
-        <item>Andrew Swanstrom</item>
+   </string-array>
+   <string-array name="teamNames"> 
         <item>Zachary Moore</item>
         <item>Jacob Beels</item>
         <item>Brian Travis</item>
-    </string-array>
+        <item>Banjo Gates</item>
+        <item>Josh Dunston</item>
+   </string-array> 
 </resources>

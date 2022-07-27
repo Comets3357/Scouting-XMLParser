@@ -126,17 +126,18 @@ public class test {
 
             String form2SecHalf;
             if (!input.equalsIgnoreCase("stop")) {
-                tele = "tele" + input.substring(0, firstCommaLoc) + " " + (input.substring(firstCommaLoc + 1, secondCommaLoc)).toUpperCase();
-                auton = "auto" + input.substring(0, firstCommaLoc) + " " + (input.substring(firstCommaLoc + 1, secondCommaLoc)).toUpperCase();
+                tele = "tele" + input.substring(0, firstCommaLoc);
+                auton = "auto" + input.substring(0, firstCommaLoc);
             }
             else{
                 tele = "";
                 auton = "";
             }
+            //Format 1 outputs into Strings.XML and Format 2 outputs into SQLiteInfo.XML
             if (teleMode && !input.equalsIgnoreCase("stop"))
-                format1 =  format1 + "\n        <item>" + tele + "</item>";
+                format1 =  format1 + "\n        <item>" + tele + " " + (input.substring(firstCommaLoc + 1, secondCommaLoc)).toUpperCase() +"</item>";
             if (autonMode && !input.equalsIgnoreCase("stop"))
-                format1 = format1 + "\n        <item>" + auton + "</item>";
+                format1 = format1 + "\n        <item>" + auton + " " +(input.substring(firstCommaLoc + 1, secondCommaLoc)).toUpperCase() + "</item>";
             //putting the information in string format
 
             if (spaceLoc!=secondCommaLoc) {
@@ -153,7 +154,7 @@ public class test {
                     format2 = format2 + "\n    <string name=\"" + auton + "\">" + form2SecHalf;
             }
             if(!input.equalsIgnoreCase("stop"))
-                format3 = format3 + "\n        <item>@string/" + input.substring(0, firstCommaLoc) + "</item>";
+                format3 = format3 + "\n        <item>@string/" + input.substring(0, firstCommaLoc) +  "</item>";
 
             firstLoop = false;
         }
@@ -225,9 +226,14 @@ public class test {
             input = input.trim();
             name = input;
             if (name.contains(",")){
+                if (name.length() - 1 == name.lastIndexOf(",")){
+                name = name.substring(0,name.lastIndexOf(","));
+            }
                 ArrayList<String> names = new ArrayList<>();
                 while (name.contains(",")){
+
                     names.add(name.substring(0, name.indexOf(",")));
+
                     name = name.substring(name.indexOf(",") + 2);
 
                 }

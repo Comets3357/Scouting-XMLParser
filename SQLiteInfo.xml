@@ -11,5 +11,12 @@
         <item>scouterName TEXT</item>
         <item>teamNumber INTEGER</item>
         <item>climb TEXT</item>
+        <item>teleupperHub INT</item>
+        <item>autoupperHub INT</item>
+        <item>telelowerHub INT</item>
+        <item>autolowerHub INT</item>
+        <item>teleDefense STRING</item>
+        <item>autoleft BOOLEAN</item>
+        <item>comments TEXT</item>
     </string-array>
 </resources>

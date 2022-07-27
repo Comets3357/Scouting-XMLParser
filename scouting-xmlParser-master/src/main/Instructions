@@ -16,5 +16,5 @@ inorder to change phases, make a line that simply says "stop". This will tell th
 read in the mode you are currently in and cause a change in phases so if you are in dual, inputing "stop" will put
 the program in the tele phase.
 
-*To be developed*
-A fourth phase that will intake the names of students as a list or individual strings
+Once you tell the program to stop while it is in auto, It will start reading for names. You can input names however you
+want weather that be line by line, or as a list separated by commas.
