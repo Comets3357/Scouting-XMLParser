@@ -1,10 +1,18 @@
-upperHub,INT,UpperHub
-lowerHub,INT,LowerHub
+topRocketCargo,INT,topRocketCargo
+middleRocketCargo,INT,middleRocketCargo
+bottomRocketCargo,INT,bottomRocketCargo
+topRocketPanel,INT,topRocketPanel
+middleRocketPanel,INT,middleRocketPanel
+bottomRocketPanel,INT,bottomRocketPanel
+frontShipCargo,INT,frontShipCargo
+sideShipCargo,INT,sideShipCargo
+frontShipPanel,INT,frontShipPanel
+sideShipPanel,INT,sideShipPanel
 stop
-Defense,STRING,Defense
+droppedOffLevelTwo,INT,droppedOffLevelTwo
+leftStart,INT,leftStart
 stop
-left,BOOLEAN,autoLeft
 stop
-Zachary Moore,
-Jacob Beels, Brian Travis, Banjo Gates,
-Josh Dunston,
+Jacob Beels
+Zach Moore
+Andrew Swanstorm

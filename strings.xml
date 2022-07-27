@@ -5,13 +5,29 @@
     <string name="matchNumber">matchNumber</string>
     <string name="scouterName">scouterName</string>
     <string name="teamNumber">teamNumber</string>
-    <string name="climb">climb</string>
-    <string name="teleupperHub">UpperHub</string>
-    <string name="autoupperHub">UpperHub</string>
-    <string name="telelowerHub">LowerHub</string>
-    <string name="autolowerHub">LowerHub</string>
-    <string name="teleDefense">Defense</string>
-    <string name="autoleft">autoLeft</string>
+    <string name="climb">climb</string>    <string name="fouls">fouls</string>    <string name="techFouls">techFouls</string>    <string name="yellowCards">yellowCards</string>    <string name="redCards">redCards</string>    <string name="teleDefense">teleDefense</string>    <string name="lostComms">lostComms</string>
+    <string name="teletopRocketCargo">topRocketCargo</string>
+    <string name="autotopRocketCargo">topRocketCargo</string>
+    <string name="telemiddleRocketCargo">middleRocketCargo</string>
+    <string name="automiddleRocketCargo">middleRocketCargo</string>
+    <string name="telebottomRocketCargo">bottomRocketCargo</string>
+    <string name="autobottomRocketCargo">bottomRocketCargo</string>
+    <string name="teletopRocketPanel">topRocketPanel</string>
+    <string name="autotopRocketPanel">topRocketPanel</string>
+    <string name="telemiddleRocketPanel">middleRocketPanel</string>
+    <string name="automiddleRocketPanel">middleRocketPanel</string>
+    <string name="telebottomRocketPanel">bottomRocketPanel</string>
+    <string name="autobottomRocketPanel">bottomRocketPanel</string>
+    <string name="telefrontShipCargo">frontShipCargo</string>
+    <string name="autofrontShipCargo">frontShipCargo</string>
+    <string name="telesideShipCargo">sideShipCargo</string>
+    <string name="autosideShipCargo">sideShipCargo</string>
+    <string name="telefrontShipPanel">frontShipPanel</string>
+    <string name="autofrontShipPanel">frontShipPanel</string>
+    <string name="telesideShipPanel">sideShipPanel</string>
+    <string name="autosideShipPanel">sideShipPanel</string>
+    <string name="teledroppedOffLevelTwo">droppedOffLevelTwo</string>
+    <string name="teleleftStart">leftStart</string>
 
 
     <!--
@@ -27,23 +43,30 @@
         <item>@string/matchNumber</item>
         <item>@string/teamNumber</item>
         <item>@string/climb</item>
-        <item>@string/upperHub</item>
-        <item>@string/lowerHub</item>
-        <item>@string/Defense</item>
-        <item>@string/left</item>
+        <item>@string/topRocketCargo</item>
+        <item>@string/middleRocketCargo</item>
+        <item>@string/bottomRocketCargo</item>
+        <item>@string/topRocketPanel</item>
+        <item>@string/middleRocketPanel</item>
+        <item>@string/bottomRocketPanel</item>
+        <item>@string/frontShipCargo</item>
+        <item>@string/sideShipCargo</item>
+        <item>@string/frontShipPanel</item>
+        <item>@string/sideShipPanel</item>
+        <item>@string/droppedOffLevelTwo</item>
+        <item>@string/leftStart</item>
 
         <!--<item>@string/RadioGroup1</item>-->
     </string-array>
-    <string-array name="reqData">
+<!-- Data required to be input before pressing the submit button in the app -->    <string-array name="reqData">
         <item>@string/matchNumber</item>
         <item>@string/teamNumber</item>
         <item>@string/climb</item>
+        <item>@string/scouterName</item>
    </string-array>
    <string-array name="teamNames"> 
-        <item>Zachary Moore</item>
         <item>Jacob Beels</item>
-        <item>Brian Travis</item>
-        <item>Banjo Gates</item>
-        <item>Josh Dunston</item>
+        <item>Zach Moore</item>
+        <item>Andrew Swanstorm</item>
    </string-array> 
 </resources>

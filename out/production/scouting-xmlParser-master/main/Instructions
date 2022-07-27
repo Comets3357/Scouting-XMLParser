@@ -1,6 +1,6 @@
 This is a guide to the XML parser program and an explanation as to how everything works.
 The XML parser takes data line by line from the "Read" file and turns the given inputs into XML code.
-The parser works in three phases, Dual, Tele, and Auto. The program shifts to them in this order.
+The parser works in three phases, Dual(covers both tele and auto), Tele, and Auto. The program shifts to them in this order.
 You must give your input in this order. Name of reference in code, the type of variable, what will show up in the app
 (ex. ver, INTEGER, version. create an integer named ver, but show up as version in the app)
 each sort of line must have only two commas and must be used to separate from the name in reference, data type, and
@@ -17,4 +17,13 @@ read in the mode you are currently in and cause a change in phases so if you are
 the program in the tele phase.
 
 Once you tell the program to stop while it is in auto, It will start reading for names. You can input names however you
-want weather that be line by line, or as a list separated by commas
+want weather that be line by line, or as a list separated by commas.
+
+Things that are already added
+-MatchNumber
+-ScouterName
+-TeamNumber
+-Climb
+-Comments
+
+Made by the great Zach Moore and Andrew Swanstrom

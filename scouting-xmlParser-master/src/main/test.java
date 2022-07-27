@@ -166,7 +166,13 @@ public class test {
                 "    <string name=\"matchNumber\">matchNumber</string>\n" +
                 "    <string name=\"scouterName\">scouterName</string>\n" +
                 "    <string name=\"teamNumber\">teamNumber</string>\n" +
-                "    <string name=\"climb\">climb</string>" + format2 +
+                "    <string name=\"climb\">climb</string>" +
+                "    <string name=\"fouls\">fouls</string>"+
+                "    <string name=\"techFouls\">techFouls</string>"+
+                "    <string name=\"yellowCards\">yellowCards</string>"+
+                "    <string name=\"redCards\">redCards</string>" +
+                "    <string name=\"teleDefense\">teleDefense</string>" +
+                "    <string name=\"lostComms\">lostComms</string>"+format2 +
                 "\n\n\n" +
                 "    <!--\n" +
                 "    <string name=\"RadioGroup1\">value6</string>\n" +
@@ -183,10 +189,12 @@ public class test {
                 "        <item>@string/climb</item>" + format3 + "\n\n" +
                 "        <!--<item>@string/RadioGroup1</item>-->\n" +
                 "    </string-array>\n" +
+                "<!-- Data required to be input before pressing the submit button in the app -->" +
                 "    <string-array name=\"reqData\">\n" +
                 "        <item>@string/matchNumber</item>\n" +
                 "        <item>@string/teamNumber</item>\n" +
                 "        <item>@string/climb</item>\n" +
+                "        <item>@string/scouterName</item>\n"+
                 "   </string-array>";
 
         format1 = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
@@ -201,6 +209,12 @@ public class test {
                 "        <item>matchNumber INTEGER</item>\n" +
                 "        <item>scouterName TEXT</item>\n" +
                 "        <item>teamNumber INTEGER</item>\n" +
+                "        <item>fouls INTEGER</item>\n" +
+                "        <item>techFouls INTEGER</item>\n" +
+                "        <item>yellowCards INTEGER</item>\n" +
+                "        <item>redCards INTEGER</item>\n" +
+                "        <item>teleDefense TEXT</item>\n" +
+                "        <item>lostComms INTEGER</item>\n" +
                 "        <item>climb TEXT</item>" + format1 + "\n        <item>comments TEXT</item>\n    </string-array>\n" +
                 "</resources>";
 
