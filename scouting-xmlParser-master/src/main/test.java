@@ -164,14 +164,14 @@ public class test {
                 "    <string name=\"textbox_default\">0</string>\n" +
                 "    <!--These first two strings are universal for all apps -->\n" +
                 "    <string name=\"matchNumber\">matchNumber</string>\n" +
-                "    <string name=\"scouterName\">scouterName</string>\n" +
                 "    <string name=\"teamNumber\">teamNumber</string>\n" +
-                "    <string name=\"climb\">climb</string>" +
-                "    <string name=\"fouls\">fouls</string>"+
-                "    <string name=\"techFouls\">techFouls</string>"+
-                "    <string name=\"yellowCards\">yellowCards</string>"+
-                "    <string name=\"redCards\">redCards</string>" +
-                "    <string name=\"teleDefense\">teleDefense</string>" +
+                "    <string name=\"scouterName\">scouterName</string>\n" +
+                "    <string name=\"climb\">climb</string>\n" +
+                "    <string name=\"fouls\">fouls</string>\n"+
+                "    <string name=\"techFouls\">techFouls</string>\n"+
+                "    <string name=\"yellowCards\">yellowCards</string>\n"+
+                "    <string name=\"redCards\">redCards</string>\n" +
+                "    <string name=\"teleDefense\">teleDefense</string>\n" +
                 "    <string name=\"lostComms\">lostComms</string>"+format2 +
                 "\n\n\n" +
                 "    <!--\n" +
@@ -183,13 +183,19 @@ public class test {
                 "    <!--Radios need 1 item in the array below for the radio group, and it needs 3 values above for each radio button-->\n" +
                 "    <!--Radios are special, each radio group needs 1 entry, and the item in the array below must equal the id of the radio group-->\n" +
                 "    <string-array name=\"datapoints\">\n" +
-                "        <item>@string/scouterName</item>\n" +
                 "        <item>@string/matchNumber</item>\n" +
                 "        <item>@string/teamNumber</item>\n" +
+                "        <item>@string/scouterName</item>\n" +
+                "        <item>@string/fouls</item>\n"+
+                "        <item>@string/techFouls</item>\n"+
+                "        <item>@string/yellowCards</item>\n"+
+                "        <item>@string/redCards</item>\n"+
+                "        <item>@string/teleDefense</item>\n"+
+                "        <item>@string/lostComms</item>\n"+
                 "        <item>@string/climb</item>" + format3 + "\n\n" +
                 "        <!--<item>@string/RadioGroup1</item>-->\n" +
                 "    </string-array>\n" +
-                "<!-- Data required to be input before pressing the submit button in the app -->" +
+                "<!-- Data required to be input before pressing the submit button in the app -->\n" +
                 "    <string-array name=\"reqData\">\n" +
                 "        <item>@string/matchNumber</item>\n" +
                 "        <item>@string/teamNumber</item>\n" +
@@ -207,8 +213,8 @@ public class test {
                 "    <!-- ScoutingData Database -->\n" +
                 "    <string-array name=\"scoutingDataKeys\">\n" +
                 "        <item>matchNumber INTEGER</item>\n" +
-                "        <item>scouterName TEXT</item>\n" +
                 "        <item>teamNumber INTEGER</item>\n" +
+                "        <item>scouterName TEXT</item>\n" +
                 "        <item>fouls INTEGER</item>\n" +
                 "        <item>techFouls INTEGER</item>\n" +
                 "        <item>yellowCards INTEGER</item>\n" +

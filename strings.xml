@@ -3,9 +3,15 @@
     <string name="textbox_default">0</string>
     <!--These first two strings are universal for all apps -->
     <string name="matchNumber">matchNumber</string>
-    <string name="scouterName">scouterName</string>
     <string name="teamNumber">teamNumber</string>
-    <string name="climb">climb</string>    <string name="fouls">fouls</string>    <string name="techFouls">techFouls</string>    <string name="yellowCards">yellowCards</string>    <string name="redCards">redCards</string>    <string name="teleDefense">teleDefense</string>    <string name="lostComms">lostComms</string>
+    <string name="scouterName">scouterName</string>
+    <string name="climb">climb</string>
+    <string name="fouls">fouls</string>
+    <string name="techFouls">techFouls</string>
+    <string name="yellowCards">yellowCards</string>
+    <string name="redCards">redCards</string>
+    <string name="teleDefense">teleDefense</string>
+    <string name="lostComms">lostComms</string>
     <string name="teletopRocketCargo">topRocketCargo</string>
     <string name="autotopRocketCargo">topRocketCargo</string>
     <string name="telemiddleRocketCargo">middleRocketCargo</string>
@@ -39,9 +45,15 @@
     <!--Radios need 1 item in the array below for the radio group, and it needs 3 values above for each radio button-->
     <!--Radios are special, each radio group needs 1 entry, and the item in the array below must equal the id of the radio group-->
     <string-array name="datapoints">
-        <item>@string/scouterName</item>
         <item>@string/matchNumber</item>
         <item>@string/teamNumber</item>
+        <item>@string/scouterName</item>
+        <item>@string/fouls</item>
+        <item>@string/techFouls</item>
+        <item>@string/yellowCards</item>
+        <item>@string/redCards</item>
+        <item>@string/teleDefense</item>
+        <item>@string/lostComms</item>
         <item>@string/climb</item>
         <item>@string/topRocketCargo</item>
         <item>@string/middleRocketCargo</item>
@@ -58,7 +70,8 @@
 
         <!--<item>@string/RadioGroup1</item>-->
     </string-array>
-<!-- Data required to be input before pressing the submit button in the app -->    <string-array name="reqData">
+<!-- Data required to be input before pressing the submit button in the app -->
+    <string-array name="reqData">
         <item>@string/matchNumber</item>
         <item>@string/teamNumber</item>
         <item>@string/climb</item>

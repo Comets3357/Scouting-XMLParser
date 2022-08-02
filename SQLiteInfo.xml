@@ -8,8 +8,8 @@
     <!-- ScoutingData Database -->
     <string-array name="scoutingDataKeys">
         <item>matchNumber INTEGER</item>
-        <item>scouterName TEXT</item>
         <item>teamNumber INTEGER</item>
+        <item>scouterName TEXT</item>
         <item>fouls INTEGER</item>
         <item>techFouls INTEGER</item>
         <item>yellowCards INTEGER</item>
