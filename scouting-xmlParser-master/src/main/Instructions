@@ -60,7 +60,141 @@ Zach Moore
 Andrew Swanstorm
 ```
 Example Output:
+strings.xml:
+```
+<resources>
+    <string name="app_name">ScoutingApp</string>
+    <string name="textbox_default">0</string>
+    <!--These first two strings are universal for all apps -->
+    <string name="matchNumber">matchNumber</string>
+    <string name="teamNumber">teamNumber</string>
+    <string name="scouterName">scouterName</string>
+    <string name="climb">climb</string>
+    <string name="fouls">fouls</string>
+    <string name="techFouls">techFouls</string>
+    <string name="yellowCards">yellowCards</string>
+    <string name="redCards">redCards</string>
+    <string name="teleDefense">teleDefense</string>
+    <string name="lostComms">lostComms</string>
+    <string name="teletopRocketCargo">topRocketCargo</string>
+    <string name="autotopRocketCargo">topRocketCargo</string>
+    <string name="telemiddleRocketCargo">middleRocketCargo</string>
+    <string name="automiddleRocketCargo">middleRocketCargo</string>
+    <string name="telebottomRocketCargo">bottomRocketCargo</string>
+    <string name="autobottomRocketCargo">bottomRocketCargo</string>
+    <string name="teletopRocketPanel">topRocketPanel</string>
+    <string name="autotopRocketPanel">topRocketPanel</string>
+    <string name="telemiddleRocketPanel">middleRocketPanel</string>
+    <string name="automiddleRocketPanel">middleRocketPanel</string>
+    <string name="telebottomRocketPanel">bottomRocketPanel</string>
+    <string name="autobottomRocketPanel">bottomRocketPanel</string>
+    <string name="telefrontShipCargo">frontShipCargo</string>
+    <string name="autofrontShipCargo">frontShipCargo</string>
+    <string name="telesideShipCargo">sideShipCargo</string>
+    <string name="autosideShipCargo">sideShipCargo</string>
+    <string name="telefrontShipPanel">frontShipPanel</string>
+    <string name="autofrontShipPanel">frontShipPanel</string>
+    <string name="telesideShipPanel">sideShipPanel</string>
+    <string name="autosideShipPanel">sideShipPanel</string>
+    <string name="teledroppedOffLevelTwo">droppedOffLevelTwo</string>
+    <string name="teleleftStart">leftStart</string>
 
+
+    <!--
+    <string name="RadioGroup1">value6</string>
+    <string name="Radio1">level1</string>
+    <string name="Radio2">level2</string>
+    <string name="Radio3">level3</string>-->
+    <!--Value1 must be match number, Value 2 must be Scouter name, name of teamNumbers cannot be altered-->
+    <!--Radios need 1 item in the array below for the radio group, and it needs 3 values above for each radio button-->
+    <!--Radios are special, each radio group needs 1 entry, and the item in the array below must equal the id of the radio group-->
+    <string-array name="datapoints">
+        <item>@string/matchNumber</item>
+        <item>@string/teamNumber</item>
+        <item>@string/scouterName</item>
+        <item>@string/fouls</item>
+        <item>@string/techFouls</item>
+        <item>@string/yellowCards</item>
+        <item>@string/redCards</item>
+        <item>@string/teleDefense</item>
+        <item>@string/lostComms</item>
+        <item>@string/climb</item>
+        <item>@string/topRocketCargo</item>
+        <item>@string/middleRocketCargo</item>
+        <item>@string/bottomRocketCargo</item>
+        <item>@string/topRocketPanel</item>
+        <item>@string/middleRocketPanel</item>
+        <item>@string/bottomRocketPanel</item>
+        <item>@string/frontShipCargo</item>
+        <item>@string/sideShipCargo</item>
+        <item>@string/frontShipPanel</item>
+        <item>@string/sideShipPanel</item>
+        <item>@string/droppedOffLevelTwo</item>
+        <item>@string/leftStart</item>
+
+        <!--<item>@string/RadioGroup1</item>-->
+    </string-array>
+<!-- Data required to be input before pressing the submit button in the app -->
+    <string-array name="reqData">
+        <item>@string/matchNumber</item>
+        <item>@string/teamNumber</item>
+        <item>@string/climb</item>
+        <item>@string/scouterName</item>
+   </string-array>
+   <string-array name="teamNames">
+        <item>Jacob Beels</item>
+        <item>Zach Moore</item>
+        <item>Andrew Swanstorm</item>
+   </string-array>
+</resources>
+```
+SQLiteInfo.xml:
+```
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- format: <item>SQL Stuff<item/>
+    COPY AND PASTE FROM STRINGS!!!
+        Use normal SQL pieces to create columns -->
+
+    <!-- ScoutingData Database -->
+    <string-array name="scoutingDataKeys">
+        <item>matchNumber INTEGER</item>
+        <item>teamNumber INTEGER</item>
+        <item>scouterName TEXT</item>
+        <item>fouls INTEGER</item>
+        <item>techFouls INTEGER</item>
+        <item>yellowCards INTEGER</item>
+        <item>redCards INTEGER</item>
+        <item>teleDefense TEXT</item>
+        <item>lostComms INTEGER</item>
+        <item>climb TEXT</item>
+        <item>teletopRocketCargo INT</item>
+        <item>autotopRocketCargo INT</item>
+        <item>telemiddleRocketCargo INT</item>
+        <item>automiddleRocketCargo INT</item>
+        <item>telebottomRocketCargo INT</item>
+        <item>autobottomRocketCargo INT</item>
+        <item>teletopRocketPanel INT</item>
+        <item>autotopRocketPanel INT</item>
+        <item>telemiddleRocketPanel INT</item>
+        <item>automiddleRocketPanel INT</item>
+        <item>telebottomRocketPanel INT</item>
+        <item>autobottomRocketPanel INT</item>
+        <item>telefrontShipCargo INT</item>
+        <item>autofrontShipCargo INT</item>
+        <item>telesideShipCargo INT</item>
+        <item>autosideShipCargo INT</item>
+        <item>telefrontShipPanel INT</item>
+        <item>autofrontShipPanel INT</item>
+        <item>telesideShipPanel INT</item>
+        <item>autosideShipPanel INT</item>
+        <item>teledroppedOffLevelTwo INT</item>
+        <item>teleleftStart INT</item>
+        <item>comments TEXT</item>
+    </string-array>
+</resources>
+```
 
 
 
