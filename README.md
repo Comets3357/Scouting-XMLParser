@@ -26,18 +26,18 @@ the program in the tele stage.
 Once you tell the program to stop while it is in auto, it will start reading for names. You can input names in two formats:
 line by line (each name is it's own line) OR as a list separated by commas.
 
-Please note that the datapoints below are automatically added:
--MatchNumber
--ScouterName
--TeamNumber
--Climb
--Comments
--Fouls
--TechFouls
--YellowCards
--redCards
--teleDefense
--lostComms
+Please note that the datapoints below are automatically added:<br>
+-MatchNumber<br>
+-ScouterName<br>
+-TeamNumber<br>
+-Climb<br>
+-Comments<br>
+-Fouls<br>
+-TechFouls<br>
+-YellowCards<br>
+-redCards<br>
+-teleDefense<br>
+-lostComms<br>
 
 **Example Input:**
 ```
