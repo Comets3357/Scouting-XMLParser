@@ -228,7 +228,7 @@ public class Main {
                 "        <item>teleDefense TEXT</item>\n" +
                 "        <item>lostComms INTEGER</item>\n" +
                 "        <item>climb TEXT</item>\n" +
-                "        <item>comments TEXT</item>" + format1 + "    </string-array>\n" +
+                "        <item>comments TEXT</item>" + format1 + "\n    </string-array>\n" +
                 "</resources>";
 
         //printing those strings to the files (new files outside the "main" folder)

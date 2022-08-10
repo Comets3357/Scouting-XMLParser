@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="scouting-xmlParser-master:jar">
+  <artifact type="jar" build-on-make="true" name="scouting-xmlParser-master:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/scouting_xmlParser_master_jar</output-path>
     <root id="archive" name="scouting-xmlParser-master.jar">
       <element id="module-output" name="scouting-xmlParser-master" />
