@@ -3,6 +3,7 @@ This is a guide to the XML parser program and an explanation as to how everythin
 The "XML parser" isn't actually parsing XML, but the name caught on pretty quickly.
 The objective of the XML parser is to generate game-specific information for the stands scouting app in
 the form of two XML files.
+## Using the Read file
 The way that this XML parser works is that it takes data line by line from the "Read" file and converts the given inputs into XML code.
 The parser works in three steps, Dual(covers both tele and auto), Tele, and Auto. Tele represents datapoints that will only be
 recorded during the teleoperated portion of the match, and auto for autonomous.
@@ -39,6 +40,8 @@ Please note that the datapoints below are automatically added:<br>
 -teleDefense<br>
 -lostComms<br>
 
+After making all your changes to the `Read` file, run `scouting-xmlParser-master.jar` to generate `strings.xml` and `SQLiteInfo.xml`
+
 **Example Input:**
 ```
 topRocketCargo,INT,topRocketCargo
@@ -62,7 +65,7 @@ Andrew Swanstorm
 ```
 **Example Output:**
 
-strings.xml:
+`strings.xml`:
 ```
 <resources>
     <string name="app_name">ScoutingApp</string>
@@ -150,7 +153,7 @@ strings.xml:
    </string-array> 
 </resources>
 ```
-SQLiteInfo.xml:
+`SQLiteInfo.xml`:
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
