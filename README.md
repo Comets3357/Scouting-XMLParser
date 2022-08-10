@@ -198,6 +198,10 @@ SQLiteInfo.xml:
 </resources>
 ```
 
+# How to build a new jar file
+This part is actually super easy, assuming you are using intellij (idk how other IDEs handle this).
+Every time you build the project, a file called `scouting-xmlParser-master.jar` will be written with the path `/out/artifacts/scouting-xmlParser-master.jar`.
+Another way to build this artifact is to select `Build -> Build Artifacts... -> scouting-xmlParser-master:jar -> Build`.
 
 
 Made by the great Zach Moore and Andrew Swanstrom
