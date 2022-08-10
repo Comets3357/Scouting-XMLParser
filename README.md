@@ -41,6 +41,7 @@ Please note that the datapoints below are automatically added:<br>
 -lostComms<br>
 
 After making all your changes to the `Read` file, run `scouting-xmlParser-master.jar` to generate `strings.xml` and `SQLiteInfo.xml`
+NOTE: You may need to install openJDK to run this
 
 **Example Input:**
 ```
